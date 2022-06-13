@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 8.5" name="BookManager">
+  <DataContextMoniker Name="/BookManagerDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2b1e33b8-4148-4915-bc5d-306e0b381dc1" absoluteBounds="0.875, 3.25, 2, 1.9631982421874998">
+      <DataClassMoniker Name="/BookManagerDataContext/SinhVien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aed9f337-e1f1-4b8a-a961-622c5c1528fa" absoluteBounds="0.89000000000000012, 3.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0cb23a23-fccb-4573-a86d-866be8a78fa9" absoluteBounds="0.5, 0.5, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/BookManagerDataContext/NganhHoc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8fce0ce2-31ce-43d9-9d24-1394190cc86c" absoluteBounds="0.515, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cae542f7-1df6-49a8-924c-b56ef8a3ac77" absoluteBounds="3.125, 3.625, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/BookManagerDataContext/HocPhan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2ede571f-d568-43c1-b106-0679c28bdec4" absoluteBounds="3.1399999999999997, 4.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e9530cb9-7480-4ceb-bb65-bafde09da396" absoluteBounds="2.125, 1.75, 2, 1.3862939453124998">
+      <DataClassMoniker Name="/BookManagerDataContext/DangKy" />
+      <nestedChildShapes>
+        <elementListCompartment Id="012fc175-12c5-4334-ad2d-34ff8df73fdf" absoluteBounds="2.1399999999999997, 2.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ef39d881-886f-4699-bf05-9ac1b23484a2" absoluteBounds="9, 1.25, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/BookManagerDataContext/ChiTietDangKy" />
+      <nestedChildShapes>
+        <elementListCompartment Id="340bace3-8385-45fe-85c6-921cb9bdab5e" absoluteBounds="9.015, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.46875 : 1.69399251302083); (1.46875 : 3.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BookManagerDataContext/NganhHoc/NganhHoc_SinhVien" />
+      <nodes>
+        <classShapeMoniker Id="0cb23a23-fccb-4573-a86d-866be8a78fa9" />
+        <classShapeMoniker Id="2b1e33b8-4148-4915-bc5d-306e0b381dc1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 3.25); (2.5 : 3.1362939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BookManagerDataContext/SinhVien/SinhVien_DangKy" />
+      <nodes>
+        <classShapeMoniker Id="2b1e33b8-4148-4915-bc5d-306e0b381dc1" />
+        <classShapeMoniker Id="e9530cb9-7480-4ceb-bb65-bafde09da396" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.125 : 2.09699625651042); (4.57291666666667 : 2.09699625651042 : JumpStart); (4.73958333333333 : 2.09699625651042 : JumpEnd); (9 : 2.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BookManagerDataContext/DangKy/DangKy_ChiTietDangKy" />
+      <nodes>
+        <classShapeMoniker Id="e9530cb9-7480-4ceb-bb65-bafde09da396" />
+        <classShapeMoniker Id="ef39d881-886f-4699-bf05-9ac1b23484a2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.65625 : 3.625); (4.65625 : 1.46875); (9 : 1.46875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BookManagerDataContext/HocPhan/HocPhan_ChiTietDangKy" />
+      <nodes>
+        <classShapeMoniker Id="cae542f7-1df6-49a8-924c-b56ef8a3ac77" />
+        <classShapeMoniker Id="ef39d881-886f-4699-bf05-9ac1b23484a2" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
